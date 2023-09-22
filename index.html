@@ -5,32 +5,55 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Furniture Internet Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="img/logo.svg" alt="Логотип" title="На главную страницу"></a>
-        <form action="#">
-            Поиск <input type="text">
-        </form>
-        <nav>
-            <a class = "nav_link" href="catalog.html" >Каталог</a>
-            <a class = "nav_link" href="basket.html">Корзина</a>
-        </nav>
-    </header>
-    <section>
-        <h1 class = "main_header">Всё, чего заслуживает ваш дом</h1>
-        <p class = "main_text">Наша мебель — ваше отражение</p>
-        <a class = "catalog_link" href="catalog.html">Перейти в каталог</a>
-    </section>
-    <section>
+    <div class="box">
+        <header class = "header">
+            <a href="index.html"><img src="img/logo.svg" alt="Логотип" title="На главную страницу"></a>
+            <form action="#">
+                <input class = "search_text" type="text" placeholder = "Поиск">
+            </form>
+            <nav>
+                <a class = "nav_link" href="catalog.html" >Каталог</a>
+                <a class = "nav_link" href="basket.html">Корзина</a>
+            </nav>
+        </header>
+        <section>
+            <h1 class = "main_header">Всё, чего<br> заслуживает ваш дом</h1>
+            <p class = "main_text">Наша мебель — ваше отражение</p>
+            <a class = "catalog_link" href="catalog.html">Перейти в каталог</a>
+        </section>
+    </div>
+    <div class = "product-box">
         <h2 class = "special_offering_header">Специальные предложения</h2>
-        <img src="img/product1.jpg" alt="Кресло VILORA" title = "Кресло VILORA">
-        <h3 class = "item_name_header">Кресло VILORA</h3>
-        <p>Мягкое и уютное, аккуратное и стильное. Упругие подушки, сиденья и приятная на ощупь ткань.</p>
-        <p class = "special_price">21 000</p>
-        <p class = "normal_price">28 000</p>
-    </section>
+        <div class = "product-content">
+            <section class = "item-box">
+                <img class = "item-image" src="img/chandelier_voda.jpeg" alt="Люстра VODA" title = "Люстра VODA" sizes="379, 250">
+                <h3 class = "item_name_header">Люстра VODA</h3>
+                <p class = "item_text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+                <p class = "special_price">120 000</p>
+                <p class = "normal_price">140 000</p>
+            </section>
+            <section class = "item-box">
+                <img class = "item-image" src="img/sofa_ronald.jpeg" alt="Диван RONALD" title = "Диван RONALD">
+                <h3 class = "item_name_header">Диван RONALD</h3>
+                <p class = "item_text">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+                <p class = "special_price">156 000</p>
+                <p class = "normal_price">198 000</p>
+            </section>
+            <section class = "item-box">
+                <img src="img/product1.jpg" alt="Кресло VILORA" title = "Кресло VILORA">
+                <h3 class = "item_name_header">Кресло VILORA</h3>
+                <p class = "item_text">Мягкое и уютное, аккуратное и стильное. Упругие подушки, сиденья и приятная на ощупь ткань.</p>
+                <p class = "special_price">21 000</p>
+                <p class = "normal_price">28 000</p>
+            </section>
+        </div>
+    </div>
     <footer>
         <img src="img/logo.svg" alt="Логотип" title="Логотип">
         <h4 class = "footer_header">Меню</h4>
@@ -45,7 +68,7 @@
         <a href="https://facebook.com"><img src="img/facebook.svg" alt="Link to Facebook" title = "Наш Facebook"></a>
         <form action="#">
             <p class = "news_subscription_text">Получайте наши новости и обновления</p>
-            <input class = "email_input_field" type="email" value="email@emaildomain.com">
+            <input class = "email_input_field" type="email" placeholder="email@emaildomain.com">
             <button class = "subscribe_button" type="submit">Подписаться</button>
         </form>
     </footer>

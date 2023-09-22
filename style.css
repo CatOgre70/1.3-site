@@ -1,22 +1,91 @@
-.nav_link {
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.box {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #C4C4C4;
+    background-image: url(img/top_background.jpeg);
+    height: 735px;
+}
+
+.header {
+    height: 76px;
+}
+
+.search_text {
+    width: 288px;
+    height: 41px;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    outline: none;
+    color: #FFF;
     font-size: 16px;
-    line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+
+.search_text::placeholder {
+    color: #FFFFFF;
+}
+
+.nav_link {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
 }
 
 .main_header {
+    width: 792px;
     font-weight: 600;
     font-size: 64px;
     line-height: 70px;
+    margin-top: 64px;
+    margin-bottom: 16px;
 }
 
 .main_text {
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 16px;
 }
 
 .catalog_link {
     font-size: 16px;
     line-height: 24px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
+.product-box {
+    margin-top: 12px;
+    margin-bottom: 13px;
 }
 
 .special_offering_header {
@@ -24,6 +93,23 @@
     font-size: 48px;
     line-height: 59px;
     color: #000000;
+    margin-top: 8px;
+    margin-bottom: 13px;
+}
+
+.product-content {
+    margin-top: 13px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.item-box {
+    width: 391px;
+}
+
+.item-image {
+    width: 379px;
+    height: 250px;
 }
 
 .item_name_header {
@@ -31,6 +117,16 @@
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+    margin-bottom: 8px;
+}
+
+.item_text {
+    margin-bottom: 12px;
+    color: #888;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .special_price {
@@ -53,6 +149,7 @@
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+    margin-bottom: 12px;
 }
 
 .footer_links {
@@ -63,10 +160,15 @@
     text-decoration: none;
 }
 
+.footer_links:hover {
+    text-decoration: underline;
+}
+
 .news_subscription_text {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+    margin-bottom: 16px;
 }
 
 .email_input_field {
