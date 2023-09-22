@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class = "header">
         <a href="index.html"><img src="img/logo.svg" alt="Логотип" title="На главную страницу"></a>
         <form action="#">
             Поиск <input type="text">
         </form>
         <nav>
-            <a href="catalog.html" >Каталог</a>
-            <a href="basket.html">Корзина</a>
+            <a class = "nav_link" href="index.html" >Главная</a>
+            <a class = "nav_link" href="catalog.html" >Каталог</a>
+            <a class = "nav_link" href="basket.html">Корзина</a>
         </nav>
     </header>
     <h2>Каталог</h2>
@@ -27,20 +28,20 @@
     </section>
     <footer>
         <img src="img/logo.svg" alt="Логотип" title="Логотип">
-        <h4>Меню</h4>
-        <a href="index.html">Главная</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="basket.html">Корзина</a>
-        <h4>Контакты</h4>
-        <a href="#">+7 908 800 80 80</a>
-        <a href="mailto:help@interier.com">help@interier.com</a>
+        <h4 class = "footer_header">Меню</h4>
+        <a class = "footer_links" href="index.html">Главная</a>
+        <a class = "footer_links" href="catalog.html">Каталог</a>
+        <a class = "footer_links" href="basket.html">Корзина</a>
+        <h4 class = "footer_header">Контакты</h4>
+        <a class = "footer_links" href="#">+7 908 800 80 80</a>
+        <a class = "footer_links" href="mailto:help@interier.com">help@interier.com</a>
         <a href="https://instagram.com"><img src="img/inst.svg" alt="Link to Instagram" title = "Наш Instagram"></a>
         <a href="https://twitter.com"><img src="img/twitter.svg" alt="Link to Twitter" title = "Наш Twitter"></a>
         <a href="https://facebook.com"><img src="img/facebook.svg" alt="Link to Facebook" title = "Наш Facebook"></a>
         <form action="#">
-            <p>Получайте наши новости и обновления</p>
-            <input type="email">
-            <button type="submit">Подписаться</button>
+            <p class = "news_subscription_text">Получайте наши новости и обновления</p>
+            <input class = "email_input_field" type="email" value="email@emaildomain.com">
+            <button class = "subscribe_button" type="submit">Подписаться</button>
         </form>
     </footer>
 </body>
